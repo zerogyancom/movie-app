@@ -1,0 +1,43 @@
+<div class="modal-header">
+    <h4 class="modal-title">Movie Details</h4>
+    <button type="button" class="close btn" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+        <span aria-hidden="true">&times;</span>
+    </button>
+</div>
+<div class="modal-body">
+    <table class="table table-striped">
+        <tbody>
+            <tr>
+                <th>The Movie Title:</th>
+                <td>{{movie.title}}</td>
+            </tr>
+            <tr>
+                <th>The Director Name:</th>
+                <td>I am ditector Name</td>
+            </tr>
+
+            <tr>
+                <th>Movie Description/Summary:</th>
+                <td>{{movie.description}}</td>
+            </tr>
+            <tr>
+                <th>Producer’s Name:</th>
+                <td>{{movie.producer}}</td>
+            </tr>
+
+            <tr>
+                <th>Year of Release:</th>
+                <td>{{movie.release_date}}</td>
+            </tr>
+            <tr>
+                <th>Movie’s Rating(IMDB):</th>
+                <td>{{movie.rt_score}}</td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
+<div class="modal-footer">
+    <button type="button" ngbAutofocus class="btn btn btn-danger "
+        (click)="activeModal.close('Close click')">Close</button>
+</div>
